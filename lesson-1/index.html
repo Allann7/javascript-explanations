@@ -1,55 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="javascript.js"></script>
 
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- this are execises fron the assignment fron javascript chapter variables and operartors -->
 
-<!-- this are execises fron the assignment fron javascript chapter variables and operartors -->
-
-<!-- 1. -->
+    <!-- 1. -->
     <script>
-        console.log(23 +97);
+      console.log(23 + 97);
     </script>
 
-<!-- 2. add 6 numbers-->
+    <!-- 2. add 6 numbers-->
     <script>
-        console.log(5+5+5+5+5+5)
+      console.log(5 + 5 + 5 + 5 + 5 + 5);
     </script>
 
-<!-- 3. log the following expresion-->
+    <!-- 3. log the following expresion-->
     <script>
-        console.log((4+6+9)/77 )
+      console.log((4 + 6 + 9) / 77);
     </script>
 
-<!-- 4. use variables -->
+    <!-- 4. use variables -->
     <script>
-        let a = 10;
-        console.log(a)
+      let a = 10;
+      console.log(a);
 
-        a = 5;
-        console.log(a)
+      a = 5;
+      console.log(a);
 
-        let b = 7 * a;
+      let b = 7 * a;
 
-        console.log(b);
+      console.log(b);
     </script>
 
-<!-- 5. try the sequence-->
+    <!-- 5. try the sequence-->
     <script>
-        const max = 57;
+      const max = 57;
 
-        const actual = max - 13;
+      const actual = max - 13;
 
-        const percentage = actual / max;
+      const percentage = actual / max;
 
-        console.log(percentage);
-
+      console.log(percentage);
     </script>
 
-</body>
+<!-- ---------------------------STRINGS SECTION-------------------------------------- -->
+
+    <script>
+      // trying embed code using backsticks (`)
+      const name = "Chris";
+      const greeting = `Hello, ${name}`;
+      console.log(greeting); // "Hello, Chris"
+      //---------------------------------------------------
+
+      const one = "Hello, ";
+      const two = "how are you?";
+      const joined = `${one}${two}`;
+      console.log(joined); // "Hello, how are you?"
+      //---------------------------------------------------
+
+      const song = "Fight the Youth";
+      const score = 9;
+      const highestScore = 10;
+      const output = `I like the song ${song}. I gave it a score of ${
+        (score / highestScore) * 100
+      }%.`;
+
+      console.log(output);
+      //---------------------------------------------------
+
+      // literal templates also support line breaks so that yo can print text in paragraphs
+
+      const newline = `One day you finally knew
+what you had to do, and began,`;
+      console.log(newline);
+      //---------------------------------------------------
+
+
+
+    </script>
+  </body>
 </html>
