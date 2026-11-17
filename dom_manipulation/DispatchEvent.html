@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dispatch Event Demo</title>
+</head>
+
+<body>
+    <Button id="girlfriend" onclick="(function(){console.log ('do you love me?')})()">girlfriend</Button>
+
+    <script>
+        const girlfriendBTN = document.querySelector("#girlfriend");
+        const doYouLoveMe = new Event('click');//simulate a click
+
+        girlfriendBTN.dispatchEvent(doYouLoveMe);// trigger(dispatchEvent) the event(doYouLoveMe) on the girfriend button(girlfriendBTN)
+
+        const iLoveYou = new CustomEvent('love',{ // still dont know how customEvents work
+            detail:{since: 'always'}
+        });
+
+        girlfriendBTN.addEventListener('love', () => {
+            console.log("Yes I do!!");
+        })
+
+        girlfriendBTN.dispatchEvent(iLoveYou);
+
+    </script>
+</body>
